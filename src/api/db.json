@@ -1,0 +1,64 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Barry Allen",
+      "alias": "@Flash"
+    },
+    {
+      "id": 2,
+      "name": "Bruce Wayne",
+      "alias": "@Batman"
+    },
+    {
+      "id": 3,
+      "name": "Clark Kent",
+      "alias": "@Superman"
+    },
+    {
+      "id": 4,
+      "name": "Diana of Themyscira",
+      "alias": "@WonderWoman"
+    },
+    {
+      "id": 5,
+      "name": "Arthur Curry",
+      "alias": "@Aquaman"
+    },
+    {
+      "id": 6,
+      "name": "Harold Jordan",
+      "alias": "@GreenLantern"
+    },
+    {
+      "id": 7,
+      "name": "Oliver Queen",
+      "alias": "@GreenArrow"
+    },
+    {
+      "id": 8,
+      "name": "Dinah Lance",
+      "alias": "@BlackCanary"
+    },
+    {
+      "id": 9,
+      "name": "Dick Grayson",
+      "alias": "@Nightwing"
+    },
+    {
+      "id": 10,
+      "name": "Selina Kyle",
+      "alias": "@Catwoman"
+    },
+    {
+      "id": 11,
+      "name": "Helena Bertinelli",
+      "alias": "@Huntress"
+    },
+    {
+      "id": 12,
+      "name": "Slade Wilson",
+      "alias": "@Deathstroke"
+    }
+  ]
+}
