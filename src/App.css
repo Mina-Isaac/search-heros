@@ -1,5 +1,9 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
 
 body,
@@ -22,8 +26,9 @@ html {
 .input,
 .result {
   background-color: rgba(255, 255, 255, 0.4);
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 5px;
+  font-size: 1rem;
 }
 
 .input {
@@ -36,7 +41,7 @@ html {
 }
 
 .result {
-  margin: -1px 1% 0 1%;
+  margin: -2px 1% 0 1%;
 }
 
 .Wrapper {
@@ -107,7 +112,6 @@ html {
   border-color: #333 #333 transparent transparent;
   border-style: solid;
   border-radius: 20px;
-  box-sizing: border-box;
   top: 0;
   left: 0;
   animation: around 0.7s ease-in-out infinite;

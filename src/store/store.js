@@ -1,14 +1,11 @@
-import { applyMiddleware, compose, createStore } from "redux";
-import { createEpicMiddleware } from "redux-observable";
-import { search } from "../api";
+import { applyMiddleware, createStore } from "redux";
+import createSagaMiddleware from "redux-saga";
 import rootReducer from "./rootReducer";
-import { fetchSearchResults } from "./epic";
+import rootSaga from "./saga";
 
-const epicMiddleware = createEpicMiddleware({
-  dependencies: search,
-});
-const enhancer = compose(applyMiddleware(epicMiddleware));
+const sagaMiddleware = createSagaMiddleware();
+const enhancer = applyMiddleware(sagaMiddleware);
 const store = createStore(rootReducer, enhancer);
-epicMiddleware.run(fetchSearchResults);
+sagaMiddleware.run(rootSaga);
 
 export default store;
